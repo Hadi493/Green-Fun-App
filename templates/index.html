@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% comment %} <link rel="stylesheet" href="{% static 'style.css' %}"> {% endcomment %}
+    <title>
+        {% block title %}
+            Green IT Fun && Coding
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div class="container bg-zinc-800 h-screen text-zinc-300">
+        {% block content %}
+            <h1 class="">Welcome To Green IT Fun and Coding</h1>
+        {% endblock %}
+    </div>
+</body>
+</html>
